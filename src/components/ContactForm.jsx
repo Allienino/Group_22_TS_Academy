@@ -1,5 +1,5 @@
 function ContactForm() {
-  return <section>Contact Form Section</section>;
+  return <section id="contact">Contact Form Section</section>;
 }
 
 export default ContactForm;
