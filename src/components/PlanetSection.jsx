@@ -1,5 +1,5 @@
 function PlanetSection() {
-  return <section>Planet Section</section>;
+  return <section id="planets">Planet Section</section>;
 }
 
 export default PlanetSection;
