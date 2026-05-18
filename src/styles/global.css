@@ -72,10 +72,118 @@ body {
   flex: 1;
   display: flex;
   justify-content: center;
-
 }
 
 .hero-planet {
   width: 100%;
   max-width: 500px;
+}
+
+/* ================= PLANETS ================== */
+#planets {
+  background-color: #f2f7ff;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#planets .head-text {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 5px;
+  padding: 30px 0 10px 0;
+}
+
+#planets .head-text p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#planets .head-text h4 {
+  font-size: 25px;
+  color: #164baf;
+}
+
+.planet-card {
+  background: white;
+  padding-bottom: 10px;
+  width: 85%;
+  text-align: center;
+  border-radius: 30px;
+
+  &:hover {
+    transform: scale(1.04);
+    transition: ease-in-out 200ms;
+  }
+}
+
+.planet-card p {
+  padding: 5px 0;
+  font-size: 13px;
+}
+
+.planet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 78%;
+  margin: 20px auto;
+}
+
+#planet-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 30px 30px 0 0;
+}
+
+.planet-glance {
+  margin: 20px auto;
+  width: 80%;
+
+  h2 {
+    color: #164baf;
+  }
+
+  p {
+    width: 70%;
+    margin-top: 10px;
+    line-height: 2.2rem;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px auto;
+}
+
+thead th {
+  background-color: #164baf;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 10px 10px 0 0;
+}
+
+td {
+  border: 1px solid #dcdcdc;
+  padding: 20px;
+  text-align: center;
+}
+
+tbody th {
+  background-color: #b9c9e6;
+  text-align: center;
+}
+
+tbody td {
+  background-color: #e9edf5;
 }
