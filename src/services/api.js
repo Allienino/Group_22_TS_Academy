@@ -1,7 +1,18 @@
 const API_BASE_URL = "https://api.le-systeme-solaire.net/rest/bodies/";
+const API_KEY = import.meta.env.VITE_PLANET_API_KEY;
 
 export async function fetchPlanets() {
-  const response = await fetch(API_BASE_URL);
+  if (!API_KEY) {
+    throw new Error(
+      "Missing planet API key. Add VITE_PLANET_API_KEY to your .env file using the key from https://api.le-systeme-solaire.net/generatekey.html"
+    );
+  }
+
+  const response = await fetch(API_BASE_URL, {
+    headers: {
+      Authorization: `Bearer ${API_KEY}`,
+    },
+  });
 
   if (!response.ok) {
     throw new Error(`Planet API error: ${response.status} ${response.statusText}`);
