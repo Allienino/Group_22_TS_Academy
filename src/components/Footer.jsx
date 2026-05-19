@@ -1,4 +1,3 @@
-import "../styles/Footer.css";
 
 function Footer() {
   return (
@@ -16,6 +15,7 @@ function Footer() {
       <p> Chika Chukwuelokalum</p>
       <p> Joshua Oluwatoba</p>
       <p> Uzuegbu Nmesoma</p>
+      <p> Fortune Umah </p>
     </div>
       </div>
 
